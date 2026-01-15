@@ -1,0 +1,129 @@
+:root {
+  --bg: #12161C;
+  --text: #DFD0B8;
+  --btn: #393E46;
+  --btn-hover: #948979;
+  --sidebar-bg: #12161C;
+  --rad: 999px;
+  --sh: 0 8px 20px rgba(0,0,0,.4);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body.mono, body.mono *, body.mono ::placeholder {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body.mono {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar top-bar"
+    "sidebar marketplace";
+  height: 100vh;
+}
+
+.top-bar {
+  grid-area: top-bar;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background: var(--sidebar-bg);
+  border-bottom: 1px solid var(--btn);
+}
+
+.btn {
+  padding: 10px 15px;
+  background: var(--btn);
+  color: var(--text);
+  border: none;
+  border-radius: var(--rad);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  color: var(--bg);
+}
+
+.donate {
+  font-weight: 600;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px 15px;
+  background: #393E46;
+  border: none;
+  border-radius: var(--rad);
+  color: var(--text);
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  color: rgba(223,208,184,0.45);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: var(--sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-right: 1px solid var(--btn);
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.25s ease;
+
+  filter: invert(85%) sepia(12%) saturate(800%) hue-rotate(350deg) brightness(95%) contrast(85%);
+}
+
+.sidebar-link:hover .sidebar-icon {
+  transform: scale(1.12);
+
+  filter: invert(12%) sepia(5%) saturate(200%) hue-rotate(200deg) brightness(95%) contrast(90%);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0;
+}
+
+.sidebar-link:hover .sidebar-icon {
+  transform: scale(1.12);
+}
+
+.marketplace {
+  grid-area: marketplace;
+  padding: 32px;
+  overflow-y: auto;
+}
