@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,32 +9,69 @@
 </head>
 <body class="mono">
   <div class="layout">
-    <header class="top-bar">
-      <button class="btn donate">Donate Us</button>
-      <input type="text" placeholder="Search items..." class="search-bar">
-      <button class="btn sell">Sell Items</button>
-      <button class="btn request">Request Items</button>
+    <header class="topBar">
+      <input type="text" placeholder="Search items..." class="searchBar">
+
+      <div class="headerRight">
+        <button class="btn donateBtn">
+          <img src="assets/mug-hot-solid-full.svg" alt="Donate" class="btnIcon">
+          Donate Us
+        </button>
+        <button class="btn sellBtn">Sell Items</button>
+        <button class="btn requestBtn">Request Items</button>
+      </div>
     </header>
+
     <aside class="sidebar">
-      <div class="sidebar-top">
-        <a href="#" class="sidebar-link" title="Profile">
-          <img src="assets/circle-user-solid-full.svg" alt="Profile" class="sidebar-icon">
+      <div class="sidebarTop">
+        <a href="#" class="sidebarLink" title="Profile">
+          <img src="assets/circle-user-solid-full.svg" alt="Profile" class="sidebarIcon">
         </a>
-
-        <a href="#" class="sidebar-link" title="Notifications">
-          <img src="assets/bell-solid-full.svg" alt="Notifications" class="sidebar-icon">
+        <a href="#" class="sidebarLink" title="Notifications">
+          <img src="assets/bell-solid-full.svg" alt="Notifications" class="sidebarIcon">
         </a>
-
-        <a href="#" class="sidebar-link" title="Favorites">
-          <img src="assets/heart-solid-full.svg" alt="Favorites" class="sidebar-icon">
-	</a>
-
-        <a href="#" class="sidebar-link" title="Settings">
-		<img src="assets/gear-solid-full.svg" alt="Settings" class="sidebar-icon">
-	</a>
+        <a href="#" class="sidebarLink" title="Favorites">
+          <img src="assets/heart-solid-full.svg" alt="Favorites" class="sidebarIcon">
+        </a>
+        <a href="#" class="sidebarLink" title="Settings">
+          <img src="assets/gear-solid-full.svg" alt="Settings" class="sidebarIcon">
+        </a>
       </div>
     </aside>
+
     <main class="marketplace">
+      <section class="featuredSection">
+        <h2>Featured Listings (by Donaters)</h2>
+        <div class="itemsScroller">
+          <div class="itemCard"><img src="sample.png" alt="1"><span>1</span></div>
+          <div class="itemCard"><img src="sample.png" alt="2"><span>2</span></div>
+          <div class="itemCard"><img src="sample.png" alt="3"><span>3</span></div>
+          <div class="itemCard"><img src="sample.png" alt="4"><span>4</span></div>
+          <div class="itemCard"><img src="sample.png" alt="5"><span>5</span></div>
+        </div>
+      </section>
+
+      <section class="hotSection">
+        <h2>Hot Deals</h2>
+        <div class="itemsScroller">
+          <div class="itemCard"><img src="sample.png" alt="1"><span>1</span></div>
+          <div class="itemCard"><img src="sample.png" alt="2"><span>2</span></div>
+          <div class="itemCard"><img src="sample.png" alt="3"><span>3</span></div>
+          <div class="itemCard"><img src="sample.png" alt="4"><span>4</span></div>
+          <div class="itemCard"><img src="sample.png" alt="5"><span>5</span></div>
+        </div>
+      </section>
+
+      <section class="requestedSection">
+        <h2>Requested Items</h2>
+        <div class="itemsScroller">
+          <div class="itemCard"><img src="sample.png" alt="1"><span>1</span></div>
+          <div class="itemCard"><img src="sample.png" alt="2"><span>2</span></div>
+          <div class="itemCard"><img src="sample.png" alt="3"><span>3</span></div>
+          <div class="itemCard"><img src="sample.png" alt="4"><span>4</span></div>
+          <div class="itemCard"><img src="sample.png" alt="5"><span>5</span></div>
+        </div>
+      </section>
     </main>
   </div>
 </body>
