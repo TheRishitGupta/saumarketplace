@@ -62,6 +62,28 @@ body.mono ::placeholder {
   color: rgba(223,208,184,0.45);
 }
 
+.categoryWrapper {
+  position: relative;
+}
+
+.categoryDropdown {
+  padding: 10px 32px 10px 14px;
+  background: var(--btnColor) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 4L6 8L10 4' stroke='%23DFD0B8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center;
+  background-size: 12px;
+  color: var(--textColor);
+  border: none;
+  border-radius: var(--borderRadius);
+  font-size: 15px;
+  cursor: pointer;
+  appearance: none;
+  min-width: 168px;
+}
+
+.categoryDropdown option {
+  background: var(--bgColor);
+  color: var(--textColor);
+}
+
 .headerRight {
   display: flex;
   align-items: center;
